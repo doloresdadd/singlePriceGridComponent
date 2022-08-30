@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla:regular,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+  </head>
+  <body class="bg-lightGray">
+    <main>
+      <!-- main div -->
+      <div
+        class="flex md:h-screen mx-auto items-center justify-center text-left p-6"
+      >
+        <!-- card -->
+        <div
+          class="flex flex-col font-sans w-5/6 md:w-1/2 mx-auto items-center justify-center rounded-lg overflow-hidden shadow-lg"
+        >
+          <!-- top section -->
+          <div class="flex flex-col bg-white p-6 w-full text-left space-y-4">
+            <h2 class="text-2xl text-cyan text-bold">Join our community</h2>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Join our community
+            <h4 class="text-brightYellow">
+              30-day, hassle-free money back guarantee
+            </h4>
+            <p class="text-grayishBlue">
+              Gain access to our full library of tutorials along with expert
+              code reviews. Perfect for any developers who are serious about
+              honing their skills.
+            </p>
+          </div>
+          <!-- bottom section -->
+          <div
+            class="flex flex-col md:flex-row w-full h-full items-center justify-between"
+          >
+            <div
+              class="flex flex-col bg-cyan items-start justify-center space-y-4 p-6 md:p-10 md:py-14 w-full h-full"
+            >
+              <h4 class="text-xl text-white">Monthly Subscription</h4>
+              <div class="flex items-center">
+                <div class="text-white align-middle text-4xl">$29</div>
+                <div class="text-lightGray ml-3">per month</div>
+              </div>
+              <p class="text-lightGray">
+                Full access for less than &dollar;1 a day
+              </p>
+              <div class="flex items-center justify-center w-full">
+                <a
+                  href="#"
+                  class="bg-brightYellow text-white w-full text-center py-2 rounded-lg shadow-lg"
+                  >Sign Up</a
+                >
+              </div>
+            </div>
 
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+            <div
+              class="flex flex-col bg-cyan bg-opacity-70 p-6 md:p-10 align-start justify-center space-y-4 w-full h-full"
+            >
+              <h4 class="text-xl text-lightGray">Why us</h4>
+              <div class="flex flex-col text-lightGray">
+                <p>Tutorials by industry experts</p>
+                <p>Peer &amp; expert code review</p>
+                <p>Coding exercises</p>
+                <p>Access to our GitHub repos</p>
+                <p>Community forum</p>
+                <p>Flashcard decks</p>
+                <p>New videos every week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Bethanie Innes</a>.
+      </p>
+    </footer>
+  </body>
 </html>
